@@ -1,0 +1,11 @@
+version: '3.1'
+ services:
+  s_nginx:
+   container-name: c_nginx
+   image: nginx
+   port: 8000:80
+
+  s_glassfish:
+    container-name: new
+    image: glassfish
+    port: 80:8090
